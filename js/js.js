@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    // $('.portfolio .banners').slick({
+    // $('.styleone .banners').slick({
     //     dots: true,
     //     arrows: false,
     //     infinite: true,
@@ -10,6 +10,31 @@ $(document).ready(function(){
     //     // cssEase: 'linear',
     //     slidesToShow: 1,
     //     slidesToScroll: 1
+    // });
+
+    // $('.styletwo .images-container').slick({
+    //     dots: false,
+    //     arrows: false,
+    //     infinite: true,
+    //     autoplay: true,
+    //     speed: 500,
+    //     fade: true,
+    //     // cssEase: 'linear',
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1
+    // });
+
+
+    // $('.stylethree .gallery-wrap').slick({
+    //     dots: false,
+    //     arrows: false,
+    //     infinite: true,
+    //     autoplay: true,
+    //     speed: 500,
+    //     // fade: true,
+    //     // cssEase: 'linear',
+    //     slidesToShow: 6,
+    //     slidesToScroll: 1,
     // });
 
     $(".sidebar .slide").click(function(){
@@ -35,21 +60,28 @@ $(document).ready(function(){
     });
 
     $("#blogabout").click(function() {
-        console.log("testa");
         $('html,body').animate({
-            scrollTop: $(".blog .about").offset().top},'slow');
+            scrollTop: $(".styletwo .about").offset().top},'slow');
     });
     
     $("#blogportfolio").click(function() {
-        console.log("test");
         $('html,body').animate({
-            scrollTop: $(".blog .portfolio").offset().top},'slow');
+            scrollTop: $(".styletwo .portfolio").offset().top},'slow');
     });
 
     $("#blogcontact").click(function() {
-        console.log("testc");
         $('html,body').animate({
-            scrollTop: $(".blog .contact").offset().top},'slow');
+            scrollTop: $(".styletwo .contact").offset().top}, 'slow');
+    });
+
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 250) {
+            $('#stickynav').addClass('stick');
+        }
+        if ($(window).scrollTop() < 251) {
+            $('#stickynav').removeClass('stick');
+        }
     });
 
 });

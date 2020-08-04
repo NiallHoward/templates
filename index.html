@@ -37,10 +37,16 @@
 					<div class="image"></div>
 					<p>Style Two</p>
 				</li>
+				<li class="theme stylethree" id="stylethree">
+					<div class="image"></div>
+					<p>Style Three</p>
+				</li>
 			</ul>
 		</div>
 	</div>
 	
+	<!-- Start of templates -->
+
 	<div class="template styleone active" id="styleone">
 		<div class="header-wrap">
 			<div class="header">
@@ -174,7 +180,10 @@
 	<div class="template styletwo" id="styletwo">
 		<div class="slide">
 			<div class="images">
-				<div class="image" style="background: url('css/Images/6.jpg') no-repeat center center; background-size:cover"></div>
+				<div class="images-container">
+					<div class="image" style="background: url('css/Images/6.jpg') no-repeat center center; background-size:cover"></div>
+					<!-- <div class="image" style="background: url('css/Images/1.jpg') no-repeat center center; background-size:cover"></div> -->
+				</div>
 			</div>
 			<div class="overlay">
 				<div class="email-wrap">
@@ -243,13 +252,47 @@
 			<div class="content-wrap contact">
 				<div class="content">
 					<div class="heading">
-						<h1>Contact</h1>
+						<h1>Get in touch</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
+					<div class="threes">
+						<div class="three">
+							<p class="icon"><i class="fas fa-phone"></i></p>
+							<p>Phone</p>
+							<p class="grey">01234 567890</p>
+						</div>
+						<div class="three">
+							<p class="icon"><i class="fas fa-at"></i></p>
+							<p>Email</p>
+							<p class="grey">email@support.com</p>
+						</div>
+						<div class="three">
+							<p class="icon"><i class="fas fa-map-marker-alt"></i></p>
+							<p>Address</p>
+							<p class="grey">180 Example Lane</p>
+						</div>
+					</div>
+					<form>
+						<div class="input half">
+							<input name="name" type="text" placeholder="Name" >
+						</div>
+						<div class="input half">
+							<input name="email" type="email" placeholder="Email">
+						</div>
+						<div class="input">
+							<input name="subj" type="text" placeholder="Subject">
+						</div>
+						<div class="input">
+							<textarea name="message" placeholder="Message"></textarea>
+						</div>
+						<div class="input">
+							<input name="submit" class="submitbutton" value="Send" type="submit">
+						</div>
+					</form>
 				</div>
 			</div>
 
-			<div class="footer-wrap contact">
+			<div class="footer-wrap">
 				<div class="footer">
 					<div class="socials">
 						<p><span><i class="fas fa-envelope"></i></span>&#8226;<span><i class="fab fa-twitter"></i></span>&#8226;<span><i class="fab fa-linkedin-in"></i></span></p>
@@ -260,15 +303,110 @@
 		</div>
 	</div>
 
-	<!-- <div class="template ecommerce" id="ecommerce">
+	<!-- New template -->
+
+	<div class="template stylethree" id="stylethree">
+		<div class="header-wrap" id="stickynav">
+			<div class="header">
+				<a class="logo"></a>
+				<div class="nav">
+					<ul>
+						<li><a>Home</a></li>
+						<li><a>About</a></li>
+						<li><a>Portfolio</a></li>
+						<li><a>Blog</a></li>
+						<li><a>Contact</a></li>
+					</ul>
+				</div>
+				<div class="socials">
+					<p><span><i class="fas fa-envelope"></i></span>&#8226;<span><i class="fab fa-twitter"></i></span>&#8226;<span><i class="fab fa-linkedin-in"></i></span></p>
+				</div>	
+			</div>
+		</div>
+		<div class="banners">
+			<div class="left">
+				<div class="main">
+					<div class="text">
+						<h2>Example heading</h2>
+						<hr>
+						<div class="clear"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="box top green">
+					<div class="text">
+						<h2>Example heading</h2>
+						<hr>
+						<div class="clear"></div>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<div class="box top">
+					<div class="text">
+						<h2>Example heading</h2>
+						<hr>
+						<div class="clear"></div>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="text">
+						<h2>Example heading</h2>
+						<hr>
+						<div class="clear"></div>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<div class="box green">
+					<div class="text">
+						<h2>Example heading</h2>
+						<hr>
+						<div class="clear"></div>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="content-wrap">
 			<div class="content">
-				<p>E-Commerce</p>
+				<div class="intro">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="boxes">
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+				</div>
+			</div>
+		</div>
+		<div class="gallery-wrap">
+			<div class="image" style="background: url('css/Images/1.jpg') no-repeat center center; background-size: cover;"></div>
+			<div class="image" style="background: url('css/Images/2.jpg') no-repeat center center; background-size: cover;"></div>
+			<div class="image" style="background: url('css/Images/3.jpg') no-repeat center center; background-size: cover;"></div>
+			<div class="image" style="background: url('css/Images/4.jpg') no-repeat center center; background-size: cover;"></div>
+			<div class="image" style="background: url('css/Images/5.jpg') no-repeat center center; background-size: cover;"></div>
+			<div class="image" style="background: url('css/Images/6.jpg') no-repeat center center; background-size: cover;"></div>
+		</div>
+		<div class="footer-wrap">
+			<div class="footer">
+			
 			</div>
 		</div>
 	</div>
 
-	<div class="template business" id="business">
+	<!-- <div class="template business" id="business">
 		<div class="content-wrap">
 			<div class="content">
 				<p>business</p>
