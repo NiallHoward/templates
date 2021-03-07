@@ -59,17 +59,18 @@ $(document).ready(function(){
         }
     });
 
-    $("#blogabout").click(function() {
+
+    $("#styletwoabout").click(function() {
         $('html,body').animate({
             scrollTop: $(".styletwo .about").offset().top},'slow');
     });
     
-    $("#blogportfolio").click(function() {
+    $("#styletwoportfolio").click(function() {
         $('html,body').animate({
             scrollTop: $(".styletwo .portfolio").offset().top},'slow');
     });
 
-    $("#blogcontact").click(function() {
+    $("#styletwocontact").click(function() {
         $('html,body').animate({
             scrollTop: $(".styletwo .contact").offset().top}, 'slow');
     });

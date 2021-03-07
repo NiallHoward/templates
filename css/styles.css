@@ -12,7 +12,8 @@ section, article, header, footer, nav, aside, hgroup { display: block; }
 
 h1, h2, h3, h4 {margin: 0; padding: 0 0 10px 0; font-family: "Poppins-Medium"; color: white; }
 input, textarea { font-family: "Poppins-Regular"; }
-p, a {margin: 0; padding: 0 0 10px 0; font-family: "Poppins-Regular";}
+p, a, li {margin: 0; padding: 0 0 10px 0; font-family: "Poppins-Regular";}
+a { text-decoration: none; }
 input, textarea, select, button { outline: none;}
 .clear {clear: both;}
 
@@ -28,7 +29,11 @@ input, textarea, select, button { outline: none;}
 .sidebar.open .side .nav .theme:hover { opacity: 1;}
 .sidebar.open .side .nav .theme.active { opacity: 1;}
 
+
 .sidebar.open .side .nav .image { background: #f2f2f2; width: 100%; height: 100px; }
+.sidebar.open .side .nav .styleone .image { background: url("images/firsttemplate.png") no-repeat center top; background-size: 100%; }
+.sidebar.open .side .nav .styletwo .image { background: url("images/twotemplate.png") no-repeat center top; background-size: 100%; }
+.sidebar.open .side .nav .stylethree .image { background: url("images/thirdtemplate.png") no-repeat center top; background-size: 100%; }
 .sidebar.open .side .nav p { color: #fff; padding: 0;}
 
 .sidebar .side::-webkit-scrollbar { width: 6px; }
@@ -45,7 +50,7 @@ input, textarea, select, button { outline: none;}
 .styleone .header-wrap .header .logo { left: 0; top: 50%; transform: translateY(-50%); position: absolute; width: 303px; height: 116px; background: url("Images/logo.png") no-repeat center center; background-size: 50%; padding: 0;}
 .styleone .header-wrap .header .nav { float: right; }
 .styleone .header-wrap .header .nav ul { margin: 0; }
-.styleone .header-wrap .header .nav ul li {list-style-type: none; display: inline-block; overflow: hidden; margin: 0 0 0 15px; line-height: 100%; vertical-align: middle; } 
+.styleone .header-wrap .header .nav ul li {list-style-type: none; display: inline-block; overflow: hidden; margin: 0 0 0 15px; line-height: 100%; vertical-align: middle; padding: 0;} 
 .styleone .header-wrap .header .nav ul li a { display: inline-block; cursor: pointer; font-weight: 700; position: relative; padding: 0 0 6px 0;}
 .styleone .header-wrap .header .nav ul li a:before{content: ""; visibility: hidden; display: block; width: 100%; height: 2px; background: #00574d; position: absolute; bottom: 0; left: -100%; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -ms-transition: all 0.2s ease; -o-transition: all 0.2s ease;}
 .styleone .header-wrap .header .nav ul li:hover a:before {left: 0; visibility: visible;}
@@ -114,8 +119,8 @@ input, textarea, select, button { outline: none;}
 /* New template */
 
 .styletwo { position: relative; width: 100%; height: 100%;}
-.styletwo .slide{ position: relative; width: 100%; height: 100%;}
-.styletwo .images { width: 100%; height: 100%; background: #333; }
+.styletwo .slide{ position: relative; width: 100%; height: 100%; max-height: 1200px;}
+.styletwo .images { width: 100%; height: 100%; background: #333; max-height: 1200px; }
 .styletwo .images-container { width: 100%; height: 100%; }
 .styletwo .image { width: 100%; height: 100%; }
 
@@ -214,7 +219,7 @@ input, textarea, select, button { outline: none;}
 .stylethree .header-wrap .header .logo {left: 0; top: 50%; transform: translateY(-50%); position: absolute; width: 303px; height: 116px; background: url("Images/logo.png") no-repeat center center; background-size: 50%; padding: 0; }
 .stylethree .header-wrap .header .nav { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 .stylethree .header-wrap .header .nav ul { margin: 0; padding: 0; }
-.stylethree .header-wrap .header .nav li { display: inline-block; margin: 0 0 0 20px; overflow: hidden; vertical-align: middle; position: relative; }
+.stylethree .header-wrap .header .nav li { display: inline-block; margin: 0 0 0 20px; overflow: hidden; vertical-align: middle; position: relative; padding: 0;}
 .stylethree .header-wrap .header .nav li a { font-size: 100%; font-weight: 700; cursor: pointer; text-transform: uppercase; position: relative; line-height: 100%; padding: 0 0 6px 0; display: inline-block;}
 .stylethree .header-wrap .header .nav ul li a:before{ content: ""; visibility: hidden; display: block; width: 100%; height: 2px; background: #00574d; position: absolute; bottom: 0; left: -100%; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -ms-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
 .stylethree .header-wrap .header .nav ul li:hover a:before { left: 0; visibility: visible; }
@@ -239,17 +244,79 @@ input, textarea, select, button { outline: none;}
 .stylethree .banners .main .text p { font-size: 120%; }
 
 .stylethree .content-wrap { padding: 0 20px; }
-.stylethree .content-wrap .content { width: 100%; max-width: 1080px; margin: 0 auto; padding: 80px 0; }
-.stylethree .content-wrap .content .intro { margin: 0 0 40px 0; text-align: center;  } 
+.stylethree .content-wrap.grey { background: #f2f2f2; }
+.stylethree .content-wrap .content { width: 100%; max-width: 1080px; margin: 0 auto; padding: 60px 0; }
+.stylethree .content-wrap .content.lessbottompadding { padding: 60px 0 20px 0; }
+.stylethree .content-wrap .content .intro { margin: 0 0 80px 0; }
+.stylethree .content-wrap .content .intro .left { width: 45%; float: left; margin-right: 5%; }
+.stylethree .content-wrap .content .intro .left .image { width: 100%; position: relative;}
+.stylethree .content-wrap .content .intro .left .image .image-container { width: 90%; float: right; overflow: hidden; } 
+.stylethree .content-wrap .content .intro .left .image .image-container img { width: 100%; transition: transform .2s; overflow: hidden; height: auto; } 
+.stylethree .content-wrap .content .intro .left .image .image-container:hover img { transform: scale(1.5); }
+.stylethree .content-wrap .content .intro .left .image .line { position: absolute; top: 0; left: 0; width: 5%; height: 25%; background: #85daaf; }
+.stylethree .content-wrap .content .intro .left .image .line2 { position: absolute; top: calc(25% + 15px);; left: 0; width: 5%; height: 25%; background: #8a8aef; }
+.stylethree .content-wrap .content .intro .left .image .image-two { width: 45%; position: absolute; top: 70%; left: -10%; overflow: hidden;  }
+.stylethree .content-wrap .content .intro .left .image .image-two img { width: 100%; transition: transform .2s; overflow: hidden; height: auto; }
+.stylethree .content-wrap .content .intro .left .image .image-two:hover img { transform: scale(1.5); }
+
+.stylethree .content-wrap .content .intro .right { width: 50%; float: left; }
+.stylethree .content-wrap .content .intro .right h3 { color: #333; }
+.stylethree .content-wrap .content .intro .right p.text { padding: 0 0 30px 0; }
+.stylethree .content-wrap .content .intro .right .list {float: left; width: 50%; }
+.stylethree .content-wrap .content .intro .right .list ul { margin: 0; padding: 0;}
+.stylethree .content-wrap .content .intro .right .list ul li {padding: 0 10px; list-style-type: none; margin: 0 0 5px 0;}
+.stylethree .content-wrap .content .intro .right .list ul li span { padding: 0 10px; }
+.stylethree .content-wrap .content .intro .right .featurebox { width: 50%; float: left; margin: 0 0 20px 0;}
+.stylethree .content-wrap .content .intro .right .featurebox .box { width: 130px; height: 130px; background: #ef8c8c; margin: 0 auto; position: relative; }
+.stylethree .content-wrap .content .intro .right .featurebox .box .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.stylethree .content-wrap .content .intro .right .featurebox .box .overlay p { padding: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; color: #fff;}
+.stylethree .content-wrap .content .intro .right .featurebox .box .overlay p span { font-size: 200%; font-weight: 700;}
+.stylethree .content-wrap .content .intro .right .featurebox .box .square { position: absolute; top: 0; left: 0; width: 15px; height: 15px; background: #00574d; }
+.stylethree .content-wrap .content .intro .right p.blockbutton { padding: 0; text-align: center;}
+.stylethree .content-wrap .content .intro .right p.blockbutton a { display: inline-block; padding: 12px 32px; background: #f2f2f2; margin: 0 auto; text-transform: uppercase; font-size: 90%; color: #333; font-weight: 700; position: relative;}
+.stylethree .content-wrap .content .intro .right p.blockbutton a span { width: 10px; height: 10px; background: #00574d; position: absolute; top: 0; left: 0; }
+
+.stylethree .content-wrap .content .heading { text-align: center; padding: 0 0 20px 0; }
+.stylethree .content-wrap .content .heading h2 { font-size: 200%; color: #333; padding: 0 0 5px 0; }
+.stylethree .content-wrap .content .heading p { padding: 0 0 20px 0; }
 .stylethree .content-wrap .content .boxes { width: 102%; margin-left: -2%; } 
-.stylethree .content-wrap .content .boxes .box { float: left; width: 31.3333%; height: 400px; background: #f2f2f2; margin: 0 0 2% 2%; } 
+.stylethree .content-wrap .content .boxes .box { float: left; width: 31.3333%; height: 400px; background: #f2f2f2; margin: 0 0 2% 2%; position: relative; }
+.stylethree .content-wrap .content .boxes .box .overlay { position: absolute; bottom: 0; left: 0; width: 100%; height: auto; background: rgba(255,255,255,0.8); padding: 20px; box-sizing: border-box; }
+.stylethree .content-wrap .content .boxes .box .overlay p { padding: 0; }
 
 .stylethree .gallery-wrap { width: 100%; }
 .stylethree .gallery-wrap .image { width: 16.66666666666667%; float: left; height: 245px; outline: none; }
 
 .stylethree .footer-wrap { padding: 0 20px; background: #f2f2f2; }
 .stylethree .footer-wrap .footer { width: 100%; max-width: 1080px; margin: 0 auto; padding: 80px 0; }
+.stylethree .footer-wrap .footer .about { float: left; width: 35%; }
+.stylethree .footer-wrap .footer .about h2 { color: #333; position: relative; line-height: 100%; display: inline-block; padding: 0; margin: 0 0 20px 0;}
+.stylethree .footer-wrap .footer .about h2:before{ content: ""; display: block; width: 50%; height: 2px; background: #00574d; position: absolute; bottom: -5px; left: 0; }
+.stylethree .footer-wrap .footer .about p { font-size: 90%; }
 
+.stylethree .footer-wrap .footer .form { float: right; width: 60%; }
+.stylethree .footer-wrap .footer .form h2{ color: #333; position: relative; line-height: 100%; display: inline-block; padding: 0; margin: 0 0 20px 0; }
+.stylethree .footer-wrap .footer .form h2:before{ content: ""; display: block; width: 50%; height: 2px; background: #00574d; position: absolute; bottom: -5px; left: 0; }
+
+.stylethree .footer-wrap .footer .form .row { width: 100%; } 
+.stylethree .footer-wrap .footer .form .row.halves { width: 102%; margin-left: -2%; }
+.stylethree .footer-wrap .footer .form .row.halves .input { width: 48%; float: left; margin: 0 0 2% 2%; }
+.stylethree .footer-wrap .footer .form .row .input input{ width: 100%; padding: 10px 20px; box-sizing: border-box; color: #444444; }
+.stylethree .footer-wrap .footer .form .row .input input:placeholder { color: #444444; }
+.stylethree .footer-wrap .footer .form .row .input textarea { width: 100%; font-family: "Poppins-Regular"; color: #444444; padding: 10px 20px; box-sizing: border-box; min-height: 120px;}
+.stylethree .footer-wrap .footer .form .row .input textarea::placeholder { color: #444; }
+.stylethree .footer-wrap .footer .form .row .input textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */ color: #444;}
+.stylethree .footer-wrap .footer .form .row .input textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #444; opacity:  1;}
+.stylethree .footer-wrap .footer .form .row .input textarea::-moz-placeholder { /* Mozilla Firefox 19+ */color: #444; opacity: 1; }
+.stylethree .footer-wrap .footer .form .row .input textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #444;}
+.stylethree .footer-wrap .footer .form .row .input textarea::-ms-input-placeholder { /* Microsoft Edge */ color: #444;}
+.stylethree .footer-wrap .footer .form .row .input.submit input { cursor: pointer; }
+
+.stylethree .bottom-footer-wrap { padding: 0 20px; background: #00574d; text-align: center;}
+.stylethree .bottom-footer-wrap .bottom-footer { width: 100%; max-width: 1080px; margin: 0 auto; padding: 20px 0; }
+.stylethree .bottom-footer-wrap .bottom-footer p { padding: 0; text-align: center; color: #fff; font-size: 90%;}
+.stylethree .bottom-footer-wrap .bottom-footer p a { text-decoration: none; color: #fff; }
+.stylethree .bottom-footer-wrap .bottom-footer p a:hover { text-decoration: underline;  }
 
 
 @media only screen and (max-width: 667px) {

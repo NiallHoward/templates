@@ -8,8 +8,6 @@
 	<script src="https://kit.fontawesome.com/cf250f502f.js" crossorigin="anonymous"></script>
 
 	<script language="JavaScript" type="text/javascript" src="js/jquery-3.2.1.js"></script>
-	<!-- <script language="JavaScript" type="text/javascript" src="js/css3-animate-it.js"></script> -->
-	<script language="JavaScript" type="text/javascript" src="js/css3-animate-it.min.js"></script>
 
 	<script language="JavaScript" type="text/javascript" src="js/slick.min.js"></script>
 	<script language="JavaScript" type="text/javascript" src="js/js.js"></script>
@@ -17,7 +15,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/animations-ie-fix.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/animations-ie-fix.css">
 	<link rel="stylesheet" type="text/css" href="css/animations.css">
 
 	
@@ -55,21 +53,12 @@
 					<ul>
 						<li><a>About</a></li>
 						<li><a>Portfolio</a></li>
-						<li><a>Testiomonials</a></li>
 						<li><a>Contact</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="banners">
-			<!-- <div class="banner" style="background: url('css/Images/6.jpg') no-repeat center center; background-size: 100%;" >
-				<div class="overlay">
-					<div class="intro">
-						<h1>Niall Howard</h1>
-						<h2>Lorem Ipsum Dolor Sit Amet</h2>
-					</div>
-				</div>
-			</div> -->
 			<div class="banner" style="background: url('css/Images/7.jpg') no-repeat center center; background-size: 100%;">
 				<div class="overlay">
 					<div class="intro">
@@ -182,7 +171,6 @@
 			<div class="images">
 				<div class="images-container">
 					<div class="image" style="background: url('css/Images/6.jpg') no-repeat center center; background-size:cover"></div>
-					<!-- <div class="image" style="background: url('css/Images/1.jpg') no-repeat center center; background-size:cover"></div> -->
 				</div>
 			</div>
 			<div class="overlay">
@@ -198,9 +186,9 @@
 						<h2>Lorem Ipsum Dolor Sit Amet</h2>
 						<hr>
 						<ul>
-							<li><a id="blogabout">About <span>&#8226;</span></a></li>
-							<li><a id="blogportfolio">Portfolio<span>&#8226;</span></a></li>
-							<li><a id="blogcontact">Contact</a></li>
+							<li><a id="styletwoabout">About <span>&#8226;</span></a></li>
+							<li><a id="styletwoportfolio">Portfolio<span>&#8226;</span></a></li>
+							<li><a id="styletwocontact">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -236,15 +224,13 @@
 						<p>Here's some projects I've been working on recently.</p>
 						<p class="blockbutton"><a href="#">View more <i class="fas fa-arrow-circle-right"></i></a></p>
 					</div>
-					<div class="boxes">
-						<div class="box" style="background: url('css/Images/7.jpg') no-repeat center center; background-size:100% 100%; ">
-							
-						</div>
-						<div class="box" style="background: url('css/Images/8.jpg') no-repeat center center; background-size:100% 100%; "></div>
-						<div class="box" style="background: url('css/Images/9.jpg') no-repeat center center; background-size:100% 100%; "></div>
-						<div class="box" style="background: url('css/Images/9.jpg') no-repeat center center; background-size:100% 100%; "></div>
-						<div class="box" style="background: url('css/Images/7.jpg') no-repeat center center; background-size:100% 100%; "></div>
-						<div class="box" style="background: url('css/Images/8.jpg') no-repeat center center; background-size:100% 100%; "></div>
+					<div class="boxes animatedParent animateOnce" data-sequence="500" data-appear-top-offset="-300">
+						<div class="box animated bounceInDown go" data-id="1" style="background: url('css/Images/7.jpg') no-repeat center center; background-size:100% 100%; "></div>
+						<div class="box animated bounceInDown go" data-id="2" style="background: url('css/Images/8.jpg') no-repeat center center; background-size:100% 100%; "></div>
+						<div class="box animated bounceInDown go" data-id="3" style="background: url('css/Images/9.jpg') no-repeat center center; background-size:100% 100%; "></div>
+						<div class="box animated bounceInDown go" data-id="4" style="background: url('css/Images/9.jpg') no-repeat center center; background-size:100% 100%; "></div>
+						<div class="box animated bounceInDown go" data-id="5" style="background: url('css/Images/7.jpg') no-repeat center center; background-size:100% 100%; "></div>
+						<div class="box animated bounceInDown go" data-id="6" style="background: url('css/Images/8.jpg') no-repeat center center; background-size:100% 100%; "></div>
 					</div>
 				</div>
 			</div>
@@ -369,25 +355,68 @@
 				</div>
 			</div>
 		</div>
+		<div class="content-wrap grey">
+			<div class="content lessbottompadding">
+				<div class="intro">
+					<div class="left">
+						<div class="image">
+							<div class="image-container">
+								<img src="css/Images/1.jpg" />
+							</div>
+							<div class="line"></div>
+							<div class="line2"></div>
+							<div class="image-two">
+								<img src="css/Images/2.jpg" />
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</strong></p> 
+						<h3>Maecenas congue et ligula nec volutpat. Cras ligula velit, pharetra a accumsan vel, pulvinar nec ipsum.</h3>
+						<p class="text">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="list">
+							<ul>
+								<li><span><i class="fas fa-check"></i></span> Example bullet point</li>
+								<li><span><i class="fas fa-check"></i></span> Example bullet point</li>
+								<li><span><i class="fas fa-check"></i></span> Example bullet point</li>
+								<li><span><i class="fas fa-check"></i></span> Example bullet point</li>
+							</ul>
+						</div>
+						<div class="featurebox">
+							<div class="box">
+								<div class="overlay">
+									<p><span>20</span><br>Years of experience</p>
+									<div class="square"></div>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p class="blockbutton"><a href="#">Discover more<span></span></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="content-wrap">
 			<div class="content">
-				<div class="intro">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="heading">
+					<h2>Portfolio</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
 				</div>
 				<div class="boxes">
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
+					<div class="box" style="background: url('css/Images/1.jpg') no-repeat center center; background-size: cover ">
+						<div class="overlay">
+							<p>Example text</p>
+						</div>
+					</div>
+					<div class="box" style="background: url('css/Images/2.jpg') no-repeat center center; background-size: cover "></div>
+					<div class="box" style="background: url('css/Images/3.jpg') no-repeat center center; background-size: cover "></div>
+					<div class="box" style="background: url('css/Images/4.jpg') no-repeat center center; background-size: cover "></div>
+					<div class="box" style="background: url('css/Images/5.jpg') no-repeat center center; background-size: cover "></div>
+					<div class="box" style="background: url('css/Images/6.jpg') no-repeat center center; background-size: cover "></div>
 				</div>
 			</div>
 		</div>
@@ -401,26 +430,51 @@
 		</div>
 		<div class="footer-wrap">
 			<div class="footer">
-			
+				<div class="about">
+					<h2>About</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.<br><br>Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.<br></br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="form">
+					<h2>Contact us</h2>
+					<div class="row halves">
+						<div class="input">
+							 <input type="text" name="name" placeholder="Full name">
+						</div>
+						<div class="input">
+							 <input type="text" name="emai" placeholder="Email">
+						</div>
+					</div>
+					<div class="row halves">
+						<div class="input">
+							 <input type="text" name="tel" placeholder="Telephone">
+						</div>
+						<div class="input">
+							 <input type="text" name="company" placeholder="Company">
+						</div>
+					</div>
+					<div class="row">
+						<div class="input">
+							<textarea name="message" placeholder="Message"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input submit">
+							<input type="submit" value="Submit">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-footer-wrap">
+			<div class="bottom-footer">
+				<p>Copyright © 2020 Niall Howard <span> | </span><a href="#">Terms and Conditions</a><span> | </span><a href="#">Privacy Policy</a><span> | </span><a href="#">Cookies Policy</a></p>
 			</div>
 		</div>
 	</div>
 
-	<!-- <div class="template business" id="business">
-		<div class="content-wrap">
-			<div class="content">
-				<p>business</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="template music" id="music">
-		<div class="content-wrap">
-			<div class="content">
-				<p>Music</p>
-			</div>
-		</div>
-	</div> -->
-
+<script src="/js/css3-animate-it.min.js"></script>
 </body>
 </html>
