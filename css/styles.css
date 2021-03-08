@@ -31,9 +31,9 @@ input, textarea, select, button { outline: none;}
 
 
 .sidebar.open .side .nav .image { background: #f2f2f2; width: 100%; height: 100px; }
-.sidebar.open .side .nav .styleone .image { background: url("images/firsttemplate.png") no-repeat center top; background-size: 100%; }
-.sidebar.open .side .nav .styletwo .image { background: url("images/twotemplate.png") no-repeat center top; background-size: 100%; }
-.sidebar.open .side .nav .stylethree .image { background: url("images/thirdtemplate.png") no-repeat center top; background-size: 100%; }
+.sidebar.open .side .nav .styleone .image { background: url("Images/firsttemplate.png") no-repeat center top; background-size: 100%; }
+.sidebar.open .side .nav .styletwo .image { background: url("Images/twotemplate.png") no-repeat center top; background-size: 100%; }
+.sidebar.open .side .nav .stylethree .image { background: url("Images/thirdtemplate.png") no-repeat center top; background-size: 100%; }
 .sidebar.open .side .nav p { color: #fff; padding: 0;}
 
 .sidebar .side::-webkit-scrollbar { width: 6px; }
