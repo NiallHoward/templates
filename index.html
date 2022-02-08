@@ -15,9 +15,8 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
-	<link rel="stylesheet" type="text/css" href="css/animations-ie-fix.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/animations-ie-fix.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/animations.css">
-
 	
 </head>
 <body>
@@ -27,7 +26,7 @@
 		<div class="side">
 			<h4>Templates</h4>
 			<ul class="nav">
-				<li class="theme styleone active" id="styleone">
+				<li class="theme styleone" id="styleone">
 					<div class="image"></div>
 					<p>Style One</p>
 				</li>
@@ -39,13 +38,21 @@
 					<div class="image"></div>
 					<p>Style Three</p>
 				</li>
+				<li class="theme stylefour" id="stylefour">
+					<div class="image"></div>
+					<p>Style Four</p>
+				</li>
+				<li class="theme stylefive active" id="stylefive">
+					<div class="image"></div>
+					<p>Style Five</p>
+				</li>
 			</ul>
 		</div>
 	</div>
 	
 	<!-- Start of templates -->
 
-	<div class="template styleone active" id="styleone">
+	<div class="template styleone" id="styleone">
 		<div class="header-wrap">
 			<div class="header">
 				<a href="#" class="logo"></a>
@@ -59,7 +66,7 @@
 			</div>
 		</div>
 		<div class="banners">
-			<div class="banner" style="background: url('css/Images/7.jpg') no-repeat center center; background-size: 100%;">
+			<div class="banner" style="background: url('css/Images/7.png') no-repeat center center; background-size: 100%;">
 				<div class="overlay">
 					<div class="intro">
 						<h1>Niall Howard</h1>
@@ -74,18 +81,18 @@
 					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
 					<p>Vivamus nec diam eu enim suscipit congue. Nam tempus nisl nec tincidunt maximus. In eu tellus consequat, dignissim diam eu, tristique leo. Cras et gravida leo, a rutrum ipsum. Vivamus tristique elementum diam, vel tempor urna vehicula ut. Sed vulputate felis lectus, sed euismod dui imperdiet ut. Pellentesque posuere lacus quis ornare tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla sed enim a est laoreet sagittis. Quisque malesuada magna in imperdiet suscipit.</p>
 				</div>
-				<div class="boxes animatedParent animateOnce" data-sequence="300">
-					<div class="box animated fadeInUpShort go" data-id="1" style="background: url('css/Images/6.jpg') no-repeat center center; background-size:cover; background-size: 100%;">
+				<div class="boxes animatedParent" data-sequence="300" data-appear-top-offset='-200'>
+					<div class="box animated fadeInUpShort go" data-id="1" style="background: url('css/Images/6.png') no-repeat center center; background-size:cover; background-size: 100%;">
 						<a class="overlay" href="#">
 							<p>Featurebox one</p>
 						</a>
 					</div>
-					<div class="box animated fadeInUpShort go" data-id="2" style="background: url('css/Images/7.jpg') no-repeat center center; background-size:cover; background-size: 100%;">
+					<div class="box animated fadeInUpShort go" data-id="2" style="background: url('css/Images/7.png') no-repeat center center; background-size:cover; background-size: 100%;">
 						<a class="overlay" href="#">
 							<p>Featurebox two</p>
 						</a>
 					</div>
-					<div class="box animated fadeInUpShort go" data-id="3" style="background: url('css/Images/6.jpg') no-repeat center center; background-size:cover; background-size: 100%;">
+					<div class="box animated fadeInUpShort go" data-id="3" style="background: url('css/Images/6.png') no-repeat center center; background-size:cover; background-size: 100%;">
 						<a class="overlay" href="#">
 							<p>Featurebox three</p>
 						</a>
@@ -94,12 +101,12 @@
 			</div>
 		</div>
 		<div class="content-wrap white">
-			<div class="content casestudies">
+			<div class="content casestudies animatedParent" data-sequence="300" data-appear-top-offset='-200'>
 				
-				<div class="casestudy">
+				<div class="casestudy animated fadeInUpShort go" data-id="1">
 					<div class="left">
 						<div class="framedimageblock">
-							<img src="css/Images/6.jpg">
+							<img src="css/Images/6.png">
 							<div class="square"></div>
 						</div>
 					</div>
@@ -111,10 +118,10 @@
 					</div>
 				</div>
 
-				<div class="casestudy flip">
+				<div class="casestudy flip animated fadeInUpShort go" data-id="2">
 					<div class="left">
 						<div class="framedimageblock">
-							<img src="css/Images/7.jpg">
+							<img loading="lazy" src="css/Images/7.png">
 							<div class="square"></div>
 						</div>
 					</div>
@@ -132,7 +139,7 @@
 			<div class="footer">
 				<div class="left">
 					<div class="image">
-						<img src="css/Images/me2.png" />
+						<img loading="lazy" src="css/Images/me2.png" />
 					</div>
 					<div class="outro">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -170,7 +177,7 @@
 		<div class="slide">
 			<div class="images">
 				<div class="images-container">
-					<div class="image" style="background: url('css/Images/6.jpg') no-repeat center center; background-size:cover"></div>
+					<div loading="lazy" class="image" style="background: url('css/Images/6.png') no-repeat center center; background-size:cover"></div>
 				</div>
 			</div>
 			<div class="overlay">
@@ -213,7 +220,7 @@
 						</div>
 					</div>
 					<div class="clear"></div>
-					<div class="fullwidthimage" style="background: url('css/Images/6.jpg') no-repeat center center; background-size:100%" ></div>
+					<div class="fullwidthimage" style="background: url('css/Images/6.png') no-repeat center center; background-size:100%" ></div>
 				</div>
 			</div>
 			
@@ -225,12 +232,12 @@
 						<p class="blockbutton"><a href="#">View more <i class="fas fa-arrow-circle-right"></i></a></p>
 					</div>
 					<div class="boxes animatedParent animateOnce" data-sequence="500" data-appear-top-offset="-300">
-						<div class="box animated bounceInDown go" data-id="1" style="background: url('css/Images/7.jpg') no-repeat center center; background-size:100% 100%; "></div>
-						<div class="box animated bounceInDown go" data-id="2" style="background: url('css/Images/8.jpg') no-repeat center center; background-size:100% 100%; "></div>
-						<div class="box animated bounceInDown go" data-id="3" style="background: url('css/Images/9.jpg') no-repeat center center; background-size:100% 100%; "></div>
-						<div class="box animated bounceInDown go" data-id="4" style="background: url('css/Images/9.jpg') no-repeat center center; background-size:100% 100%; "></div>
-						<div class="box animated bounceInDown go" data-id="5" style="background: url('css/Images/7.jpg') no-repeat center center; background-size:100% 100%; "></div>
-						<div class="box animated bounceInDown go" data-id="6" style="background: url('css/Images/8.jpg') no-repeat center center; background-size:100% 100%; "></div>
+						<div class="box animated bounceInDown go" data-id="1" style="background: url('css/Images/7.png') no-repeat center center; background-size:100% 100%; "></div>
+						<div class="box animated bounceInDown go" data-id="2" style="background: url('css/Images/8.png') no-repeat center center; background-size:100% 100%; "></div>
+						<div class="box animated bounceInDown go" data-id="3" style="background: url('css/Images/9.png') no-repeat center center; background-size:100% 100%; "></div>
+						<div class="box animated bounceInDown go" data-id="4" style="background: url('css/Images/9.png') no-repeat center center; background-size:100% 100%; "></div>
+						<div class="box animated bounceInDown go" data-id="5" style="background: url('css/Images/7.png') no-repeat center center; background-size:100% 100%; "></div>
+						<div class="box animated bounceInDown go" data-id="6" style="background: url('css/Images/8.png') no-repeat center center; background-size:100% 100%; "></div>
 					</div>
 				</div>
 			</div>
@@ -361,12 +368,12 @@
 					<div class="left">
 						<div class="image">
 							<div class="image-container">
-								<img src="css/Images/1.jpg" />
+								<img loading="lazy" src="css/Images/1.png" />
 							</div>
 							<div class="line"></div>
 							<div class="line2"></div>
 							<div class="image-two">
-								<img src="css/Images/2.jpg" />
+								<img loading="lazy" src="css/Images/2.png" />
 							</div>
 						</div>
 					</div>
@@ -407,26 +414,26 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
 				</div>
 				<div class="boxes">
-					<div class="box" style="background: url('css/Images/1.jpg') no-repeat center center; background-size: cover ">
+					<div class="box" style="background: url('css/Images/1.png') no-repeat center center; background-size: cover ">
 						<div class="overlay">
 							<p>Example text</p>
 						</div>
 					</div>
-					<div class="box" style="background: url('css/Images/2.jpg') no-repeat center center; background-size: cover "></div>
-					<div class="box" style="background: url('css/Images/3.jpg') no-repeat center center; background-size: cover "></div>
-					<div class="box" style="background: url('css/Images/4.jpg') no-repeat center center; background-size: cover "></div>
-					<div class="box" style="background: url('css/Images/5.jpg') no-repeat center center; background-size: cover "></div>
-					<div class="box" style="background: url('css/Images/6.jpg') no-repeat center center; background-size: cover "></div>
+					<div class="box" style="background: url('css/Images/2.png') no-repeat center center; background-size: cover "></div>
+					<div class="box" style="background: url('css/Images/3.png') no-repeat center center; background-size: cover "></div>
+					<div class="box" style="background: url('css/Images/4.png') no-repeat center center; background-size: cover "></div>
+					<div class="box" style="background: url('css/Images/5.png') no-repeat center center; background-size: cover "></div>
+					<div class="box" style="background: url('css/Images/6.png') no-repeat center center; background-size: cover "></div>
 				</div>
 			</div>
 		</div>
 		<div class="gallery-wrap">
-			<div class="image" style="background: url('css/Images/1.jpg') no-repeat center center; background-size: cover;"></div>
-			<div class="image" style="background: url('css/Images/2.jpg') no-repeat center center; background-size: cover;"></div>
-			<div class="image" style="background: url('css/Images/3.jpg') no-repeat center center; background-size: cover;"></div>
-			<div class="image" style="background: url('css/Images/4.jpg') no-repeat center center; background-size: cover;"></div>
-			<div class="image" style="background: url('css/Images/5.jpg') no-repeat center center; background-size: cover;"></div>
-			<div class="image" style="background: url('css/Images/6.jpg') no-repeat center center; background-size: cover;"></div>
+			<div class="image" style="background: url('css/Images/1.png') no-repeat center center; background-size: cover;"></div>
+			<div class="image" style="background: url('css/Images/2.png') no-repeat center center; background-size: cover;"></div>
+			<div class="image" style="background: url('css/Images/3.png') no-repeat center center; background-size: cover;"></div>
+			<div class="image" style="background: url('css/Images/4.png') no-repeat center center; background-size: cover;"></div>
+			<div class="image" style="background: url('css/Images/5.png') no-repeat center center; background-size: cover;"></div>
+			<div class="image" style="background: url('css/Images/6.png') no-repeat center center; background-size: cover;"></div>
 		</div>
 		<div class="footer-wrap">
 			<div class="footer">
@@ -474,6 +481,300 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- New Template -->
+
+	<div class="template stylefour" id="stylefour">
+		
+		<div class="header-wrap" id="stickynav">
+			<div class="header">
+				<div class="left">
+					<a class="logo"></a>
+				</div>
+				<div class="right">
+					<div class="nav">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Our Blog</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#" class="button">Sign In</a></li>
+							<li><a href="#" class="button">Register</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-wrap lightgreen clippath">
+			<div class="content">
+				<div class="intro">
+					<div class="left">
+						<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</h2>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p class="blockbutton"><a href="#">Contact us</a></p>
+					</div>
+					<div class="right">
+						<div class="image">
+							<img src="css/images/6.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-wrap">
+			<div class="content">
+				<div class="boxes">
+					<div class="box">
+						<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+						<p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div class="box">
+						<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+						<p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div class="box">
+						<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+						<p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="projects">
+			<div class="project p1">
+				<div class="text">
+					<div class="inner">
+						<div class="block">
+							<h2>Example heading here</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							<p class="blockbutton"><a href="#">Read more</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="images">
+					<div class="fade">
+						<div class="image" style="background: url(css/Images/6.png) no-repeat center center; background-size: 100%;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="project p2">
+				<div class="text">
+					<div class="inner">
+						<div class="block">
+							<h2>Example heading here</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p class="blockbutton"><a href="#">Read more</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="images">
+					<div class="fade">
+						<div class="image" style="background: url(css/Images/7.png) no-repeat center center; background-size: 100%;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="project p3">
+				<div class="text">
+					<div class="inner">
+						<div class="block">
+							<h2>Example heading here</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							<p class="blockbutton"><a href="#">Read more</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="images">
+					<div class="fade">
+						<div class="image" style="background: url(css/Images/8.png) no-repeat center center; background-size: 100%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content-wrap morepadding blogsection">
+			<div class="content">
+
+				<h2>Whats New</h2>
+				<p class="blockbutton"><a href="#">Find out more</a><p>
+
+				<div class="blogs">
+					<div class="blog">
+						<div class="image">
+							<img src="css/Images/8.png" />
+						</div>
+						<div class="text">
+							<h4>Example name here</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<div class="blog">
+						<div class="image">
+							<img src="css/Images/8.png" />
+						</div>
+						<div class="text">
+							<h4>Example name here</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<div class="blog">
+						<div class="image">
+							<img src="css/Images/8.png" />
+						</div>
+						<div class="text">
+							<h4>Example name here</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer-wrap">
+			<div class="footer">
+				<div class="left">
+					<a class="logo"></a>
+				</div>
+				<div class="right">
+					<p><a><span>info@niallhoward.co.uk</span></a><a><span>01234 567890 </span></a></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-footer-wrap">
+			<div class="bottom-footer">
+				<p>Copyright © 2020 Niall Howard | Terms and Conditions | Privacy Policy | Cookies Policy</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- New Template -->
+
+	<div class="template stylefive active" id="stylefive">
+
+		<div class="header-wrap">
+			<div class="header">
+				<div class="logo">
+					<a href="" ><span>Logo<span></a>
+				</div>
+				
+				<div class="right">
+					<p class="blockbutton"><a href="#">Sign Up</a></p>
+					<div class="nav">
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slides">
+			<div class="fade">
+				<div class="slide">
+					<div class="image">
+						<img src="css/Images/shoes-background.png" />
+						<div class="arrow bounce"></div>
+						<div class="overlay"></div>
+					</div>
+					<div class="content animatedParent" data-sequence="300" data-appear-top-offset="-200">
+						<div class="left animated fadeInUpShort go" data-id="1">
+							<h2>Slightly longer heading</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p class="blockbutton"><a href="#">Find out more</a></p>
+						</div>
+						<div class="right animated fadeInUpShort go" data-id="2">
+							
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="image">
+						<img src="css/Images/8.png" />
+						<div class="arrow bounce"></div>
+						<div class="overlay"></div>
+					</div>
+					<div class="content animatedParent" data-sequence="300" data-appear-top-offset="-200">
+						<div class="left animated fadeInUpShort go" data-id="1">
+							<h2>Another Slightly longer heading</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p class="blockbutton"><a href="#">Find out more</a></p>
+						</div>
+						<div class="right animated fadeInUpShort go" data-id="2">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="content-wrap">
+			<div class="content">
+				<div class="left">
+					<div class="boxes">
+						<div class="box"></div>
+						<div class="box"></div>
+						<div class="box"></div>
+						<div class="box"></div>
+					</div>
+				</div>
+				<div class="right">
+					<h2>Heading one</h2>
+					<h4 class="price">£70.00</h4>
+					<p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p class="notice">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p class="details">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p class="blockbutton"><a href="#">Add to bag</a></p>
+					
+					<div class="concertinas">
+						<div class="concertina">
+							<div class="heading">
+								<p>Heading one</p>
+							</div>
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div class="concertina">
+							<div class="heading">
+								<p>Heading one</p>
+							</div>
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div class="concertina">
+							<div class="heading">
+								<p>Heading one</p>
+							</div>
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>	
+		</div>
+		<div class="content-wrap grey">
+			<div class="content">
+
+			</div>
+		</div>
+
+		<div class="footer-wrap">
+			<div class="footer">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>	
+		</div>
+
 
 <script src="/js/css3-animate-it.min.js"></script>
 </body>

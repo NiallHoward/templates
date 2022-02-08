@@ -25,17 +25,35 @@ $(document).ready(function(){
     // });
 
 
-    // $('.stylethree .gallery-wrap').slick({
-    //     dots: false,
-    //     arrows: false,
-    //     infinite: true,
-    //     autoplay: true,
-    //     speed: 500,
-    //     // fade: true,
-    //     // cssEase: 'linear',
-    //     slidesToShow: 6,
-    //     slidesToScroll: 1,
-    // });
+    // if( $( ".slides .slide" ).hasClass( "slick-current" ) ){
+
+    //     console.log("test");
+        
+    //     $(".slides .slide.slick-current .content .left").addClass('go');
+    //     $(".slides .slide.slick-current .content .right").addClass('go');
+    // }
+
+
+    $('.stylefive .slides .fade').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+
+
+    $('.stylefive .slides .fade').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+      $(slick.$slides[currentSlide]).removeClass('active-slide');
+      $(slick.$slides[nextSlide]).addClass('active-slide');
+
+      console.log( slick.$slides[nextSlide] );
+    });
 
     $(".sidebar .slide").click(function(){
         if( $(".sidebar").hasClass('open') ){
@@ -59,6 +77,19 @@ $(document).ready(function(){
         }
     });
 
+    $(document).on('click', '.concertina .heading',function(){
+      if( $(this).hasClass('open') ){
+        $(this).removeClass('open');
+        $(this).parent().children('.text').slideUp(200);
+      } else {
+        $('.concertina .text').slideUp(200);
+        $('.concertina .heading').removeClass('open');
+        $(this).parent().children('.text').slideDown(200);
+        $(this).addClass('open');
+      }
+      return false;
+    });
+
 
     $("#styletwoabout").click(function() {
         $('html,body').animate({
@@ -77,11 +108,21 @@ $(document).ready(function(){
 
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 250) {
-            $('#stickynav').addClass('stick');
+        if ($(window).scrollTop() > 350) {
+            $('.stylefour #stickynav').addClass('stick');
         }
-        if ($(window).scrollTop() < 251) {
-            $('#stickynav').removeClass('stick');
+        if ($(window).scrollTop() < 351) {
+            $('.stylefour #stickynav').removeClass('stick');
+        }
+    });
+
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 350) {
+            $('.stylethree #stickynav').addClass('stick');
+        }
+        if ($(window).scrollTop() < 351) {
+            $('.stylethree #stickynav').removeClass('stick');
         }
     });
 
