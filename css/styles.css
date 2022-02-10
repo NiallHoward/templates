@@ -34,6 +34,7 @@ input, textarea, select, button { outline: none;}
 .sidebar.open .side .nav .styletwo .image { background: url("Images/twotemplate.png") no-repeat center top; background-size: 100%; }
 .sidebar.open .side .nav .stylethree .image { background: url("Images/thirdtemplate.png") no-repeat center top; background-size: 100%; }
 .sidebar.open .side .nav .stylefour .image { background: url("Images/fourthtemplate.png") no-repeat center top; background-size: 100%; }
+.sidebar.open .side .nav .stylefive .image { background: url("Images/fifthtemplate.png") no-repeat center top; background-size: 100%; }
 .sidebar.open .side .nav p { color: #fff; padding: 0;}
 
 .sidebar .side::-webkit-scrollbar { width: 6px; }
