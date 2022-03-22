@@ -34,18 +34,18 @@ $(document).ready(function(){
     // }
 
 
-    $('.stylefive .slides .fade').slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        autoplay: false,
-        autoplaySpeed: 3000,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    });
+    // $('.stylefive .slides .fade').slick({
+    //     dots: false,
+    //     arrows: false,
+    //     infinite: true,
+    //     autoplay: false,
+    //     autoplaySpeed: 3000,
+    //     speed: 500,
+    //     fade: true,
+    //     cssEase: 'linear',
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    // });
 
 
     $('.stylefive .slides .fade').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
