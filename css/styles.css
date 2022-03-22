@@ -9,7 +9,9 @@ section, article, header, footer, nav, aside, hgroup { display: block; }
 
 @font-face { font-family: "Poppins-Regular"; src: url("Fonts/Poppins-Regular.ttf");}
 @font-face { font-family: "Poppins-Medium"; src: url("Fonts/Poppins-Medium.ttf");}
-@font-face { font-family: "Poppins-Bold"; src: url("Fonts/Poppins-bold.ttf");}
+@font-face { font-family: "Poppins-Bold"; src: url("Fonts/Poppins-Bold.ttf");}
+@font-face { font-family: "Poppins-Black"; src: url("Fonts/Poppins-Black.ttf");}
+
 
 h1, h2, h3, h4 {margin: 0; padding: 0 0 10px 0; font-family: "Poppins-Medium"; color: white; }
 input, textarea { font-family: "Poppins-Regular"; }
@@ -507,7 +509,63 @@ input, textarea, select, button { outline: none;}
 
 /* New template */
 
-.stylesix div:after, .stylesix form:after, .stylesix ul:after, .stylesix input:after, .stylesix section:after, .stylesix article:after, .stylesix header:after, .stylesix footer:after, .stylesix nav:after, .stylesix aside:after, .stylesix hgroup:after
+:root {
+  --white: #ffffff;
+  --darkgrey: #333333;
+}
+
+.stylesix div:after, .stylesix form:after, .stylesix ul:after, .stylesix input:after, .stylesix section:after, .stylesix article:after, .stylesix header:after, .stylesix footer:after, .stylesix nav:after, .stylesix aside:after, .stylesix hgroup:after { content: normal; }
+.stylesix .row { flex-direction: row!important; }
+.stylesix h1, .stylesix h2, .stylesix h3, .stylesix h4, .stylesix p { color: var(--darkgrey); }
+.stylesix h1 { font-size: 350%; }
+.stylesix h2 { font-size: 300%; line-height: 110%;}
+.stylesix h3 { font-size: 200%; }
+.stylesix h4 { font-size: 120%; }
+p.blockbutton a { display: inline-block; padding: 8px 32px; border-radius: 10px; border: 1px solid var(--white); color: var(--white); font-size: 90%; font-weight: 700; }
+p.blockbutton a:hover { background: var(--white); color: var(--darkgrey); }
+
+.stylesix .header-wrap { padding: 0 120px; width: 100%; box-sizing: border-box; position: absolute; top: 0; left: 0; z-index: 5; }
+.stylesix .header-wrap .header { padding: 40px 0; display: flex; justify-content: space-between; flex-wrap: nowrap; align-items: center; }
+.stylesix .header-wrap .header .logo { width: 195px;}
+.stylesix .header-wrap .header .logo a { display: block; width: 100%; height: 75px; background: url("Images/logo-white.png") no-repeat center center; background-size: 100%; padding: 0; }
+
+.stylesix .header-wrap .header .nav ul { padding: 0; margin: 0; }
+.stylesix .header-wrap .header .nav ul li { list-style: none; display: inline-block; padding: 0; font-size: 120%; }
+.stylesix .header-wrap .header .nav ul li a { display: block; padding: 10px 20px; color: var(--white); font-weight: 700; }
+
+.stylesix .banners { position: relative; }
+.stylesix .banners:before {clip-path: polygon(100% 0, 100% 100%, 0 100%); content: ''; visibility: visible; position: absolute; bottom: -1px; left: 0; width: 100%; height: 40px; z-index: 5; background: var(--white); }
+.stylesix .banners .banner { width: 100%; height: 95vh; min-height: 700px; position: relative; }
+.stylesix .banners .banner .image img { position: absolute; top: 50%; transform: translateY(-50%); left: 0; width: 100%; height: 100%; object-fit: cover; }
+.stylesix .banners .banner .image .darkoverlay { width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0,0,0,0.7); }
+.stylesix .banners .banner .overlay { position: absolute; top: 0; left: 0; padding: 0 120px; box-sizing: border-box; width: 100%; height: 100%; display: flex; justify-content: center; flex-wrap: nowrap; align-items: center; }
+.stylesix .banners .banner .overlay .text { text-align: center; max-width: 920px; }
+.stylesix .banners .banner .overlay .text h4 { padding: 0 0 5px 0; color: var(--white); }
+.stylesix .banners .banner .overlay .text h2 { padding: 0 0 20px 0; font-size: 375%; line-height: 100%; font-family: "Poppins-Black"; color: var(--white);  }
+.stylesix .banners .banner .overlay .text p { padding: 0; color: var(--white); padding: 0 0 20px 0; }
+.stylesix .banners .banner .overlay .text p.blockbutton a { display: inline-block; padding: 8px 32px; border-radius: 10px; border: 1px solid var(--white); color: var(--white); font-size: 90%; font-weight: 700; }
+.stylesix .banners .banner .overlay .text p.blockbutton a:hover { background: var(--white); color: var(--darkgrey); }
+.stylesix .banners .banner .overlay .socials { position: absolute; bottom: 80px; right: 120px; }
+.stylesix .banners .banner .overlay .socials:before { display: block; content: ''; visibility: visible; top: 0; margin: 0 auto 10px auto; height: 50px; width: 1px; background: var(--white);  }
+.stylesix .banners .banner .overlay .socials p { padding: 0; }
+.stylesix .banners .banner .overlay .socials p a { color: var(--white); display: block; font-weight: 700; width: 30px; height: 30px; padding: 0; position: relative; border: 1px solid var(--white); margin: 0 0 10px 0; border-radius: 100%; }
+.stylesix .banners .banner .overlay .socials p a:hover { background: var(--white); color: var(--darkgrey); }
+.stylesix .banners .banner .overlay .socials p a span { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+
+
+.stylesix .content-wrap { padding: 0 120px; }
+.stylesix .content-wrap.grey { background: #f2f2f2; }
+.stylesix .content-wrap.withbackground { background: url("Images/background-overlay.png") no-repeat center left; background-size: 50%;; }
+.stylesix .content-wrap .content { padding: 80px 0; }
+.stylesix .content-wrap.morepadding .content { padding: 160px 0; }
+.stylesix .content-wrap .content .boxes { display: flex; justify-content: space-between; flex-wrap: nowrap; align-items: center; gap: 40px; margin-top: -140px; position: relative; z-index: 10; }
+.stylesix .content-wrap .content .boxes .box { background: #8ebbdb; padding: 40px 20px; box-sizing: border-box; border-radius: 10px; text-align: center; }
+.stylesix .content-wrap .content .boxes .box hr { height: 4px; background: var(--darkgrey); }
+
+
+
+
+
 
 
 
