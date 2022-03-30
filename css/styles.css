@@ -552,17 +552,15 @@ p.blockbutton a:hover { background: var(--white); color: var(--darkgrey); }
 .stylesix .banners .banner .overlay .socials p a:hover { background: var(--white); color: var(--darkgrey); }
 .stylesix .banners .banner .overlay .socials p a span { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 
-
 .stylesix .content-wrap { padding: 0 120px; }
 .stylesix .content-wrap.grey { background: #f2f2f2; }
 .stylesix .content-wrap.withbackground { background: url("Images/background-overlay.png") no-repeat center left; background-size: 50%;; }
 .stylesix .content-wrap .content { padding: 80px 0; }
 .stylesix .content-wrap.morepadding .content { padding: 160px 0; }
-.stylesix .content-wrap .content .boxes { display: flex; justify-content: space-between; flex-wrap: nowrap; align-items: center; gap: 40px; margin-top: -140px; position: relative; z-index: 10; }
-.stylesix .content-wrap .content .boxes .box { background: #8ebbdb; padding: 40px 20px; box-sizing: border-box; border-radius: 10px; text-align: center; }
-.stylesix .content-wrap .content .boxes .box hr { height: 4px; background: var(--darkgrey); }
-
-
+/*.stylesix .content-wrap .content .boxes { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; gap: 40px; }*/
+.stylesix .content-wrap .content .boxes { display: grid; grid-template-columns: 1fr 1fr 1fr;  column-gap: 5%; }
+/*.stylesix .content-wrap .content .boxes .box { background: #8ebbdb; padding: 40px 20px; box-sizing: border-box; border-radius: 10px; text-align: center; flex-basis: 33.333333%; margin: 0 0 40px 0; }*/
+.stylesix .content-wrap .content .boxes .box { background: #8ebbdb; padding: 40px 20px; box-sizing: border-box; border-radius: 10px; text-align: center; flex-basis: 33.333333%; margin: 0 0 40px 0; }
 
 
 
