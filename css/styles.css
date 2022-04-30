@@ -120,6 +120,19 @@ input, textarea, select, button { outline: none;}
 .styleone .bottom-footer-wrap .bottom-footer p a { text-decoration: none; color: #fff; }
 .styleone .bottom-footer-wrap .bottom-footer p a:hover { text-decoration: underline;  }
 
+
+@media (max-width: 667px) {
+	.styleone .content-wrap .content .boxes { width:100%; margin-left: 0; }
+	.styleone .content-wrap .content .boxes .box { width:100%; margin: 0 0 2% 0; float: none; padding-bottom: 56.25%; }
+
+	.styleone .content-wrap .casestudies .casestudy .left { width: 100%; float: none; margin: 0 0 40px 0;}
+	.styleone .content-wrap .casestudies .casestudy .right { width: 100%; float: none;}
+
+	.styleone .footer-wrap .footer .left { width: 100%; float: none; }
+	.styleone .footer-wrap .footer .right { width: 100%; float: none; }
+
+}
+
 /* New template */
 
 .styletwo { position: relative; width: 100%; height: 100%;}
